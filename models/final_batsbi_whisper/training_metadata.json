@@ -1,0 +1,11 @@
+{
+  "model_base": "openai/whisper-small",
+  "stage": "small full train",
+  "mean_dev_cer": 0.17247560650341945,
+  "tiny_best_baseline": 0.27,
+  "train_subset": "all train clips",
+  "dev_subset": "first 100 shuffled dev examples for quick check",
+  "language": "Georgian",
+  "device": "cuda:0",
+  "cuda_available": true
+}
