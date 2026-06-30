@@ -1,7 +1,7 @@
 {
   "model_base": "openai/whisper-small",
   "stage": "small full train",
-  "mean_dev_cer": 0.17247560650341945,
+  "mean_dev_cer": 0.089,
   "tiny_best_baseline": 0.27,
   "train_subset": "all train clips",
   "dev_subset": "first 100 shuffled dev examples for quick check",
