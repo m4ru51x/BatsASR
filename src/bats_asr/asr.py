@@ -68,7 +68,7 @@ class BatsbiWhisperASR:
         with torch.no_grad():
             pred_ids = self.model.generate(
                 input_features,
-                attention_mask=attention_mask
+                attention_mask=attention_mask,
                 max_new_tokens=max_new_tokens,
                 do_sample=False,
             )
