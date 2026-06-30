@@ -58,12 +58,17 @@ class BatsbiWhisperASR:
             speech,
             sampling_rate=sampling_rate,
             return_tensors="pt",
+            return_attention_mask=True,
         )
         input_features = inputs.input_features.to(self.device)
-
+        attention_mask = inputs.get("attention_mask")
+        if attention_mask is not None:
+            attention_mask = attention_mask.to(self.device)
+            
         with torch.no_grad():
             pred_ids = self.model.generate(
                 input_features,
+                attention_mask=attention_mask
                 max_new_tokens=max_new_tokens,
                 do_sample=False,
             )
