@@ -49,3 +49,7 @@ The current pipeline is:
 ```text
 audio → fine-tuned Whisper → Batsbi transcription
 ```
+
+### Contributor
+
+Maria Medvedeva, DoTaCL MSU
