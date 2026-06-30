@@ -6,7 +6,7 @@ BatsASR is a fine-tuned Whisper-based automatic speech recognition model for Bat
 
 ```python
 !git clone https://github.com/m4ru51x/BatsASR.git
-%cd batsbi-whisper-asr
+%cd BatsASR
 ```
 
 ### 2. Install dependencies
