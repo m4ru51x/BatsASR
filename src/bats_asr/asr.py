@@ -9,7 +9,6 @@ from transformers import WhisperForConditionalGeneration, WhisperProcessor
 
 
 class BatsbiWhisperASR:
-    """Fine-tuned Whisper ASR wrapper for Batsbi / Tsova-Tush."""
 
     def __init__(
         self,
@@ -28,7 +27,6 @@ class BatsbiWhisperASR:
         self.model.to(self.device)
         self.model.eval()
 
-        # Do not suppress uncommon Georgian/Batsbi symbols.
         self.model.config.suppress_tokens = []
         self.model.generation_config.suppress_tokens = []
 
@@ -39,7 +37,6 @@ class BatsbiWhisperASR:
             )
             self.model.generation_config.forced_decoder_ids = forced_decoder_ids
         except Exception:
-            # Some saved models already include generation settings.
             pass
 
     def transcribe(
@@ -81,5 +78,4 @@ class BatsbiWhisperASR:
         return " ".join(str(text).split())
 
 
-# Short alias for the project name.
 BatsASR = BatsbiWhisperASR
