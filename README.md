@@ -18,16 +18,7 @@ BatsASR is a fine-tuned Whisper-based automatic speech recognition model for Bat
 !pip install -r requirements.txt
 ```
 
-### 3. Install/check the model
-
-The model is already included in the repository. Run the model setup script:
-
-```python
-!python scripts/install_model.py \
---model "models/final_batsbi_whisper"
-```
-
-### 4. Transcribe audio
+### 3. Transcribe audio
 
 Upload an audio file:
 
