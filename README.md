@@ -1,6 +1,8 @@
 # BatsASR
 BatsASR is a fine-tuned Whisper-based automatic speech recognition model for Batsbi / Tsova-Tush. It transcribes audio into the current Georgian-based orthography used in the project and reaches approximately 0.91 character accuracy.
+
 ![alt text](https://panthernow.com/wp-content/uploads/pasted-image-0-25.png)
+
 ## Colab quick start
 
 ### 1. Clone the repository
